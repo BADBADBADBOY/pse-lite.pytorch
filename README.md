@@ -19,10 +19,6 @@ label
 ### Compression model mode one,use lite basemodel
 
 ***
-#### test
-
-python3 inference.py
-
 Support switching basemodel,(mobilenet,squeezenet,shufflenet,resnet)
 
 #### train 
@@ -32,7 +28,14 @@ Support switching basemodel,(mobilenet,squeezenet,shufflenet,resnet)
 python3 train.py --backbone mobile 
 ```
 
+#### test
+
+```
+python3 inference.py
+```
+
 ***
+
 
 ### Compression model mode two,Channel clipping
 
