@@ -62,6 +62,9 @@ python3 train_prune_finetune.py
 ```
 python3 inference_prune.py 
 ```
+### Compression model mode two, Model distillation
+
+
 
 # reference
 
