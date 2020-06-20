@@ -3,8 +3,6 @@
 
 ***
 
-# how to train
-
 #### data format
 follow icdar15 dataset format, x1,y1,x2,y2,x3,y3,x4,y4,label
 ```
@@ -21,14 +19,14 @@ label
 ### Compression model mode one,use lite basemodel
 
 ***
-# how to test
+#### test
 
 python3 inference.py
 
+Support switching basemodel,(mobilenet,squeezenet,shufflenet,resnet)
 
 #### train 
 
-Support switching basemodel,(mobilenet,squeezenet,shufflenet,resnet)
 
 ```
 python3 train.py --backbone mobile 
@@ -56,7 +54,7 @@ python3 prune.py
 python3 train_prune_finetune.py 
 ```
 
-##### prune test
+#### prune test
 
 ```
 python3 inference_prune.py 
