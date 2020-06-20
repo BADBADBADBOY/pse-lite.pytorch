@@ -20,13 +20,12 @@ import argparse
 
 def prune(args):
     model = models.Psenet(args.backbone).cuda()
-
-    # checkpoint = torch.load(r'./checkpoint.pth.tar')
-    # d = collections.OrderedDict()
-    # for key, value in checkpoint['state_dict'].items():
-    #     tmp = key[7:]
-    #     d[tmp] = value
-    # model.load_state_dict(d)
+    checkpoint = torch.load(args.checkpoint)
+    d = collections.OrderedDict()
+    for key, value in checkpoint['state_dict'].items():
+        tmp = key[7:]
+        d[tmp] = value
+    model.load_state_dict(d)
 
 
     bn_weights = []
