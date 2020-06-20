@@ -24,7 +24,7 @@ label
 # how to test
 
 python3 inference.py
-```
+
 
 #### train 
 
