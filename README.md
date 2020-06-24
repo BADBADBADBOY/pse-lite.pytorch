@@ -64,7 +64,7 @@ python3 inference_prune.py
 ```
 #### performance
 |Method| precision|     recall  |   hmean|prune ratio|modelsize（M）|infer time(v100)(ms)|
-| :-------- | --------:| :------: |
+| - | - | - |
 | PSENet-1s (ResNet50)|   |  ||0|114.5|
 | PSENet-1s (ResNet50)|0.8179|   0.7958|  0.8067|0.8|25.1|
 | PSENet-1s (ResNet50)|0.8124|   0.7862|  0.7991|0.9|16.6|7
